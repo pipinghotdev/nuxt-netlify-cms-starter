@@ -23,6 +23,19 @@ Netlify CMS configuration is stored in `static/admin/config.yml`. See the [Netli
 
 Blog posts will be stored in the `content/blog` folder.
 
+## Features
+
+Features include:
+
+- Full SEO support for blog posts.
+- Lazy-load images.
+- robots.txt to disallow admin routes.
+- Automatic sitemap generation.
+- Font Awesome imports (see nuxt.config.js to add more).
+- Google font loading.
+- Page transitions.
+- And of course, full page HTML rendering for deployment on Netlify!
+
 ## NuxtJS
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
