@@ -2,12 +2,12 @@
   <section class="post">
     <Container class="meta-section">
       <h1>{{ title }}</h1>
-      <p v-if="date === update" class="post-meta">
-        Posted on {{ date }}, by
+      <p v-if="published === updated" class="post-meta">
+        Posted on {{ published }} by
         <a v-if="authorlink" :href="authorlink">{{ author }}</a>
       </p>
       <p v-else class="post-meta">
-        Updated on {{ update }}, by
+        Updated on {{ updated }} by
         <a v-if="authorlink" :href="authorlink">{{ author }}</a>
       </p>
     </Container>
@@ -32,14 +32,29 @@ export default {
       title: `${this.title} | <Blog Name>`,
       meta: [
         {
+          hid: 'article:published_time',
+          property: 'article:published_time',
+          content: this.date
+        },
+        {
+          hid: 'article:modified_time',
+          property: 'article:modified_time',
+          content: this.update
+        },
+        {
+          hid: 'og:updated_time',
+          property: 'og:updated_time',
+          content: this.update
+        },
+        {
           hid: 'og:url',
-          name: 'og:url',
-          content: `https://nuxt-netlify-cms-starter.com/blog/${this.slug}`
+          property: 'og:url',
+          content: `https://<domain>/blog/${this.slug}`
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `${this.title} | <Blog Name>`
+          content: `${this.title} | Code Tribe`
         },
         {
           hid: 'description',
@@ -54,7 +69,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `https://nuxt-netlify-cms-starter.com${this.thumbnail}`
+          content: `https://<domain>${this.thumbnail}`
         },
         {
           hid: 'og:image:alt',
@@ -94,7 +109,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: `https://nuxt-netlify-cms-starter.com${this.thumbnail}`
+          content: `https://code-tribe.com${this.thumbnail}`
         }
       ]
     }
@@ -115,12 +130,26 @@ export default {
       update
     } = attr
 
+    const dateOptions = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    }
+
+    const publishedDate = new Date(date)
+    const updatedDate = new Date(update)
+    const published = publishedDate.toLocaleDateString('en-GB', dateOptions)
+    const updated = updatedDate.toLocaleDateString('en-GB', dateOptions)
+
     return {
       title,
       author,
       authorlink,
       date,
       update,
+      published,
+      updated,
       type,
       thumbnail,
       summary,

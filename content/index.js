@@ -2,13 +2,6 @@ const fs = require('fs')
 const parseMarkdown = require('front-matter-markdown')
 
 /**
- * Remove files here
- */
-fs.unlink('content/blogs.json', err => {
-  if (err) throw new Error(err)
-})
-
-/**
  *
  * @param {string} dir
  * @returns {Array}
@@ -23,7 +16,7 @@ const getFiles = dir => {
     } else {
       const markdownFile = fs.readFileSync(`content/blog/${file}`, 'utf-8')
       const fileContents = parseMarkdown(markdownFile)
-      const date = fileContents.published
+      const date = fileContents.date
       const slug = file
         .split('.')
         .slice(0, -1)

@@ -16,9 +16,8 @@ collections:
       - {label: "Language", name: "language", widget: "string", required: false}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: Summary 164-220, name: summary, widget: text, required: true, pattern: ['.{164,220}', "Must be within 164 and 220 characters"]}
-      - {label: "Published", name: "published", widget: "date", required: true}
-      - {label: "Publish Date", name: "date", widget: "date", format: "Do MMM YYYY", required: true}
-      - {label: "Updated Date", name: "update", widget: "date", format: "Do MMM YYYY", required: false}
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Updated Date", name: "update", widget: "date", required: false}
       - {label: "Author", name: "author", widget: "string", required: true}
       - {label: "Author Link", name: "authorlink", widget: "string", required: false}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: true}
