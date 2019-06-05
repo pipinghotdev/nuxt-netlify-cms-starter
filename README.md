@@ -1,6 +1,6 @@
 # NuxtJS Netlify CMS Starter
 
-> Netlify CMS starter based on the Code Tribe blog.
+> Netlify CMS starter based on the [Code Tribe](https://code-tribe.com) blog.
 
 ## Build Setup
 
@@ -30,7 +30,7 @@ Features include:
 - Full SEO support for blog posts.
 - Lazy-load images.
 - robots.txt to disallow admin routes.
-- Automatic sitemap generation.
+- Automatic sitemap generation of your homepage and blog posts.
 - Font Awesome imports (see nuxt.config.js to add more).
 - Google font loading.
 - Page transitions.
