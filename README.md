@@ -33,6 +33,8 @@ Features include:
 - Automatic sitemap generation of your homepage and blog posts.
 - Font Awesome imports (see nuxt.config.js to add more).
 - Google font loading.
+- PrismJS syntax highlighting.
+- Medium-like social sharing.
 - Page transitions.
 - And of course, full page HTML rendering for deployment on Netlify!
 

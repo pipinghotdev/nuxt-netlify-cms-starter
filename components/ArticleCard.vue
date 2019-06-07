@@ -28,7 +28,7 @@ export default {
     return {
       size: 'two-thirds',
       language: this.articleInfo.attributes.language,
-      icon: ''
+      icon: 'js'
     }
   },
   mounted() {

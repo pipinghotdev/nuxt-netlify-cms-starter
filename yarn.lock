@@ -9261,6 +9261,11 @@ shallow-clone@^1.0.0:
     kind-of "^5.0.0"
     mixin-object "^2.0.1"
 
+share-this@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/share-this/-/share-this-1.2.2.tgz#4c6671612d7634779d68137c9141c7bfc7385373"
+  integrity sha512-yfaoZyWFYo+kuPTV+geoOVuG7XVgChB5SfoTzBHl4Yk2EZ2yjb7038P5s46GNGTdWh6tKm7p+SnKYI394mufUg==
+
 shebang-command@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea"
