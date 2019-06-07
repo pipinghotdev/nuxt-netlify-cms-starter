@@ -15,6 +15,14 @@ $ yarn run dev
 $ yarn run generate
 ```
 
+## Quick Start
+
+1. Clone or fork this repository.
+2. Set up your [Netlify](https://netlify.com) account.
+3. Sync Netlify with your own repository to automatically deploy when you write a new post.
+4. `yarn dev` or `npm run dev` for local development (available at `http://localhost:3000`).
+5. Deploy, write some posts and profit!
+
 Access your Netlify CMS admin dashboard at `localhost:3000/admin`. By default, the project assumes you want to use [Netlify Identity](https://www.netlify.com/docs/identity/). If you don't wish to use this, modify the `static/admin/index.html` file.
 
 ## Configuration
