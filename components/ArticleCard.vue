@@ -17,18 +17,18 @@ export default {
   props: {
     articleInfo: {
       type: Object,
-      default: () => {}
+      default: () => {},
     },
     index: {
       type: Number,
-      default: 0
-    }
+      default: 0,
+    },
   },
   data() {
     return {
       size: 'two-thirds',
       language: this.articleInfo.attributes.language,
-      icon: 'js'
+      icon: 'js',
     }
   },
   mounted() {
@@ -65,8 +65,8 @@ export default {
     capitalize(s) {
       if (typeof s !== 'string') return ''
       return s.charAt(0).toUpperCase() + s.slice(1)
-    }
-  }
+    },
+  },
 }
 </script>
 

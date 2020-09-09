@@ -9,13 +9,13 @@ export default {
   props: {
     narrow: {
       type: Boolean,
-      default: false
+      default: false,
     },
     flex: {
       type: Boolean,
-      default: false
-    }
-  }
+      default: false,
+    },
+  },
 }
 </script>
 

@@ -19,17 +19,17 @@
 </template>
 
 <script>
-import Container from '~/components/Container'
-
 import Prism from 'prismjs'
 import shareThis from 'share-this'
 import * as twitterSharer from 'share-this/dist/sharers/twitter'
 import * as facebookSharer from 'share-this/dist/sharers/facebook'
 import * as redditSharer from 'share-this/dist/sharers/reddit'
 
+import Container from '~/components/Container'
+
 export default {
   components: {
-    Container
+    Container,
   },
   head() {
     return {
@@ -38,84 +38,84 @@ export default {
         {
           hid: 'article:published_time',
           property: 'article:published_time',
-          content: this.date
+          content: this.date,
         },
         {
           hid: 'article:modified_time',
           property: 'article:modified_time',
-          content: this.update
+          content: this.update,
         },
         {
           hid: 'og:updated_time',
           property: 'og:updated_time',
-          content: this.update
+          content: this.update,
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `https://<domain>/blog/${this.slug}`
+          content: `https://<domain>/blog/${this.slug}`,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `${this.title} | Code Tribe`
+          content: `${this.title} | Code Tribe`,
         },
         {
           hid: 'description',
           name: 'description',
-          content: this.summary
+          content: this.summary,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.summary
+          content: this.summary,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `https://<domain>${this.thumbnail}`
+          content: `https://<domain>${this.thumbnail}`,
         },
         {
           hid: 'og:image:alt',
           property: 'og:image:alt',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'article'
+          content: 'article',
         },
         {
           hid: 'og:article:author',
           property: 'og:article:author',
-          content: this.authorlink
+          content: this.authorlink,
         },
         {
           hid: 'twitter:card',
           name: 'twitter:card',
-          content: 'summary_large_image'
+          content: 'summary_large_image',
         },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'twitter:site',
           name: 'twitter:site',
-          content: '@tribe_code'
+          content: '@tribe_code',
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: this.summary
+          content: this.summary,
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: `https://code-tribe.com${this.thumbnail}`
-        }
-      ]
+          content: `https://code-tribe.com${this.thumbnail}`,
+        },
+      ],
     }
   },
   async asyncData({ params }) {
@@ -131,14 +131,14 @@ export default {
       thumbnail,
       title,
       type,
-      update
+      update,
     } = attr
 
     const dateOptions = {
       weekday: 'long',
       year: 'numeric',
       month: 'short',
-      day: 'numeric'
+      day: 'numeric',
     }
 
     const publishedDate = new Date(date)
@@ -158,7 +158,7 @@ export default {
       thumbnail,
       summary,
       slug,
-      html: post.html
+      html: post.html,
     }
   },
   mounted() {
@@ -166,11 +166,11 @@ export default {
 
     const selectionShare = shareThis({
       selector: '#shareable',
-      sharers: [twitterSharer, facebookSharer, redditSharer]
+      sharers: [twitterSharer, facebookSharer, redditSharer],
     })
 
     selectionShare.init()
-  }
+  },
 }
 </script>
 
