@@ -1,8 +1,6 @@
 <template>
   <footer class="footer">
-    <Container flex>
-      &copy; Blog Name {{ new Date().getFullYear() }}
-    </Container>
+    <Container flex>&copy; Blog Name {{ new Date().getFullYear() }}</Container>
   </footer>
 </template>
 
@@ -11,8 +9,8 @@ import Container from '~/components/Container'
 
 export default {
   components: {
-    Container
-  }
+    Container,
+  },
 }
 </script>
 

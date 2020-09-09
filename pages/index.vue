@@ -25,7 +25,7 @@ import blogs from '~/content/blogs.json'
 export default {
   components: {
     ArticleCard,
-    Container
+    Container,
   },
 
   async asyncData({ app }) {
@@ -33,20 +33,20 @@ export default {
       const wholeMD = await import(`~/content/blog/${blog.slug}.md`)
       return {
         attributes: wholeMD.attributes,
-        link: blog.slug
+        link: blog.slug,
       }
     }
 
     const blogList = await Promise.all(
-      blogs.map(blog => awaitImport(blog))
-    ).then(res => {
+      blogs.map((blog) => awaitImport(blog))
+    ).then((res) => {
       return {
-        blogList: res
+        blogList: res,
       }
     })
 
     return blogList
-  }
+  },
 }
 </script>
 
