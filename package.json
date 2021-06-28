@@ -27,7 +27,7 @@
     "nuxt": "^2.8.1",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-webfontloader": "^1.1.0",
-    "prismjs": "^1.23.0",
+    "prismjs": "^1.24.0",
     "sass-loader": "^10.0.2",
     "share-this": "^1.2.2",
     "vue-lazyload": "^1.2.6"
