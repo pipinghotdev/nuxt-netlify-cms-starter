@@ -23,7 +23,7 @@
     "cross-env": "^7.0.2",
     "front-matter-markdown": "^0.4.3",
     "frontmatter-markdown-loader": "^3.6.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "nuxt": "^2.8.1",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-webfontloader": "^1.1.0",
