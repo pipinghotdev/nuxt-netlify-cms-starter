@@ -2,7 +2,7 @@
   <section>
     <Container>
       <div class="intro">
-        <h1>Antoine Champenois - Writings</h1>
+        <h1>Writings</h1>
       </div>
     </Container>
     <Container flex>

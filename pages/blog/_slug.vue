@@ -15,6 +15,9 @@
       <img v-lazy="thumbnail" class="thumbnail" :alt="title" />
       <div id="shareable" class="post-content" v-html="html"></div>
     </Container>
+    <Container narrow>
+      <div class="content">{{ summary }}</div>
+    </Container>
   </section>
 </template>
 

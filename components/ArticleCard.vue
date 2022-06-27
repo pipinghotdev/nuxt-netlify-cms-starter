@@ -1,11 +1,11 @@
 <template>
-  <article class="article-card" :class="[size, language]">
+  <article class="article-card" :class="[language]">
     <nuxt-link :to="`/blog/${articleInfo.link}`">
       <div class="card-inner">
-        <p class="type">
+        <!-- <p class="type">
           <font-awesome-icon :icon="['fab', icon]" />
           {{ capitalize(articleInfo.attributes.type) }}
-        </p>
+        </p> -->
         <h4>{{ articleInfo.attributes.title }}</h4>
       </div>
     </nuxt-link>
@@ -28,7 +28,7 @@ export default {
     return {
       // size: 'two-thirds',
       language: this.articleInfo.attributes.language,
-      icon: 'js',
+      // icon: 'js',
     }
   },
   mounted() {

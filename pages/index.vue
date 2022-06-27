@@ -5,14 +5,6 @@
         <h1>Antoine Champenois</h1>
       </div>
     </Container>
-    <!-- <Container flex>
-      <ArticleCard
-        v-for="(blog, index) in blogList"
-        :key="index"
-        :index="index"
-        :article-info="blog"
-      />
-    </Container> -->
   </section>
 </template>
 

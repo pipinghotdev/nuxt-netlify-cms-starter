@@ -1,16 +1,16 @@
 <template>
-  <nav class="navbar" role="navigation">
+  <nav class="navbar w-100" role="navigation">
     <div class="navbar-inner">
       <div class="brand">
         <nuxt-link to="/" class="nav-link">AC</nuxt-link>
       </div>
-      <nuxt-link to="/writings" class="brand">Writing</nuxt-link>
+      <nuxt-link to="/writings" class="nav-link">Writing</nuxt-link>
       <ul class="social-icons">
-        <li class="icon">
+        <!-- <li class="icon">
           <a href="#" target="_blank" class="nav-link">
             <font-awesome-icon :icon="['fab', 'twitter']" />
           </a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
@@ -25,8 +25,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    // max-width: 1200px;
+    //margin: 0 auto;
     align-items: center;
 
     .brand {
