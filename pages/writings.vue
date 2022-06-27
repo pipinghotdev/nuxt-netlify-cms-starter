@@ -2,29 +2,28 @@
   <section>
     <Container>
       <div class="intro">
-        <h1>Antoine Champenois</h1>
+        <h1>Antoine Champenois - Writings</h1>
       </div>
     </Container>
-    <!-- <Container flex>
+    <Container flex>
       <ArticleCard
         v-for="(blog, index) in blogList"
         :key="index"
         :index="index"
         :article-info="blog"
       />
-    </Container> -->
+    </Container>
   </section>
 </template>
-
 <script>
-// import ArticleCard from '~/components/ArticleCard'
+import ArticleCard from '~/components/ArticleCard'
 import Container from '~/components/Container'
 
 import blogs from '~/content/blogs.json'
 
 export default {
   components: {
-    // ArticleCard,
+    ArticleCard,
     Container,
   },
 
@@ -49,7 +48,6 @@ export default {
   },
 }
 </script>
-
 <style lang="scss" scoped>
 .intro {
   text-align: center;

@@ -2,8 +2,9 @@
   <nav class="navbar" role="navigation">
     <div class="navbar-inner">
       <div class="brand">
-        <nuxt-link to="/" class="nav-link">Blog Name</nuxt-link>
+        <nuxt-link to="/" class="nav-link">AC</nuxt-link>
       </div>
+      <nuxt-link to="/writings" class="brand">Writing</nuxt-link>
       <ul class="social-icons">
         <li class="icon">
           <a href="#" target="_blank" class="nav-link">
@@ -18,7 +19,7 @@
 <style lang="scss" scoped>
 .navbar {
   width: 100%;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 
   .navbar-inner {
     display: flex;

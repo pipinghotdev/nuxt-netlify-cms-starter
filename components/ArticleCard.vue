@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      size: 'two-thirds',
+      // size: 'two-thirds',
       language: this.articleInfo.attributes.language,
       icon: 'js',
     }
@@ -72,13 +72,15 @@ export default {
 
 <style lang="scss">
 .article-card {
-  border-radius: 0.5rem;
-  background-color: #d84727;
+  background-color: white;
   padding: 1rem;
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   min-height: 240px;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
   a {
     position: absolute;
@@ -86,7 +88,7 @@ export default {
     width: 100%;
     left: 0;
     top: 0;
-    color: #fff;
+    color: black;
     box-shadow: none;
     background: rgba(0, 0, 0, 0);
     transition: 0.2s ease all;
@@ -109,28 +111,6 @@ export default {
 
     @media (max-width: 567px) {
       width: 100%;
-    }
-  }
-
-  // Types
-  &.vuejs {
-    background-color: #3ab795;
-  }
-  &.react {
-    background-color: #01baef;
-  }
-  &.js {
-    background-color: #fff275;
-
-    a {
-      color: #252525;
-    }
-  }
-  &.other {
-    background-color: #ff8c42;
-
-    a {
-      color: #252525;
     }
   }
 

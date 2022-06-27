@@ -90,6 +90,7 @@ export default {
    */
   modules: [
     ['@nuxtjs/google-tag-manager', { id: 'GTM-PV76V8S' }],
+    'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
